@@ -9,6 +9,7 @@ def home_page_view(request,*args,**kwargs):
     page_qs=PageVisit.objects.filter(path=request.path)
 
     my_title="My Page"
+    html_template="home.html"
 
     my_context={
         "page_title":my_title,
